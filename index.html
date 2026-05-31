@@ -58,7 +58,9 @@ h1{
 </head>
 
 <body>
-
+<audio id="musik" loop>
+    <source src="Backstreet_Boys_-Shape_Of_My_Heart(mp3.pm).mp3" type="audio/mpeg">
+</audio>
 <div class="header">
 <h1>💖 Amanda Billah 💖</h1>
 
@@ -128,11 +130,13 @@ Bagus Kurniawan ❤️ Amanda Billah
 
 <script>
 function bukaSurat(){
-document.getElementById('surat').style.display='block';
-window.scrollTo({
-top:500,
-behavior:'smooth'
-});
+    document.getElementById('surat').style.display='block';
+    document.getElementById('musik').play();
+
+    window.scrollTo({
+        top:500,
+        behavior:'smooth'
+    });
 }
 </script>
 
